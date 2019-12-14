@@ -6,3 +6,9 @@ The prompt shows we are in home directory.
 ```
 bandit0@bandit:~$ cat readme
 ```
+Hit `CTRL+D` (End of Transmission/End of File) or type `exit`. If a ssh session is stuck, hit `Enter ~.`
+
+I'm installing sshpass. Using it as follows with command substitution:
+```
+me@vm:~$ sshpass -p $(cat bandit1) ssh bandit1@bandit.labs.overthewire.org -p 2220
+```
