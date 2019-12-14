@@ -6,5 +6,13 @@ __Bandit Level 4__
 Hidden means `ls -la`, this reveals the directory `inhere`.
 
 `cd inhere`
+
 `ls -la` reveals a file `.hidden`
 `cat .hidden` for the flag.
+
+With a small bash script:
+```bash
+#!/bin/bash
+cd ~/.hidden
+cat .hidden
+```
