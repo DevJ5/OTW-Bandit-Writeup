@@ -8,6 +8,6 @@ __Bandit Level 7__
 
 Somewhere on the server means from root, output all the non permissions to dev null.
 
-```
-find / -user bandit7 -group bandit7 -size 33c 2>/dev/null
+``` bash
+bandit6@bandit:~$ find / -user bandit7 -group bandit7 -size 33c 2>/dev/null
 ```
