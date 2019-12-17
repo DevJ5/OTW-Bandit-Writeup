@@ -8,3 +8,7 @@ A `cat data.txt | less` shows lines with what appear to be hashes. Uniq only sor
 #!/bin/bash
 sort data.txt | uniq -c | grep -P "^\s+1[^0-9]" | awk '{print $2}'
 ```
+
+Awk also has builtin regex, but \s doesnt work as whitespace. Apparantly this is because \s is a GNU Awk thing. Putting an actual space does seem to do the trick.
+
+`sort data.txt | uniq -c | awk '/^ *1[^0-9]/ {print}'`
