@@ -5,5 +5,5 @@ Bandit Level 14
 We find a private key. We can use ssh with this file as a private key to login to localhost.
 
 ``` bash
--i sshkey.private bandit14@localhost
+ssh -i sshkey.private bandit14@localhost
 ```
