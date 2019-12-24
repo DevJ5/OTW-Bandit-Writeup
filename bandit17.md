@@ -8,7 +8,7 @@ PORT      STATE    SERVICE
 31790/tcp open     unknown
 
 `nmap -sV -A -p 31000-32000 localhost | grep open` shows
-
+31790/tcp open     ssl/unknown
 ```
 openssl s_client -connect localhost:31790 -quiet < /etc/bandit_pass/bandit16 > /tmp/pkeyto17.txt
 
