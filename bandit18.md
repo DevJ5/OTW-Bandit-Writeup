@@ -6,3 +6,8 @@ __Bandit Level 18__
 Seems like a case for diff.
 
 `diff passwords.old passwords.new`
+
+```bash
+#!/bin/bash
+diff passwords.old passwords.new | grep ">" | awk '{print $2}'
+```
