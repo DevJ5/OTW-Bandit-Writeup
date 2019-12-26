@@ -25,3 +25,8 @@ I only have read permissions with the password from 18. So I cant change the bas
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme" > ~/Desktop/cat_readme.txt
 ```
 
+```bash
+#!/bin/bash
+scp -P 2220 bandit18@bandit.labs.overthewire.org:~/readme ~/Desktop/readme.txt
+```
+
