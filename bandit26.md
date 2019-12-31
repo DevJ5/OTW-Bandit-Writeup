@@ -7,6 +7,8 @@ Lets check what shell it uses:
 `cat /etc/passwd | grep bandit26` shows /usr/bin/showtext as a shell...
 `cat /usr/bin/showtext`
 
-It opens ~/text.txt in more. Now we can screw with more by adjusting the terminal size so it stays in the buffer. From this buffer we can execute commands with !. Hmm that doesn't seem to work here. We can also enter vim with `v`.
+It opens ~/text.txt in more. Now we can screw with more by adjusting the terminal size so it stays in the buffer. From this buffer we can execute commands with !. `! /bin/sh` doesnt work. `!bash` doesnt work. 
+
+Hmm that doesn't seem to work here. We can also enter vim with `v`.
 
 In vim we can read from files using `:r /etc/bandit_pass/bandit26`
