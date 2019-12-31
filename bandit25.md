@@ -10,7 +10,7 @@ We can use sequence for this.
 ```bash
 #!/bin/bash
 passb24=$(cat /etc/bandit_pass/bandit24)
-for i in $(seq -w 9999); 
+for i in $(seq -w 9999); # can also use for i in {000..9999}
 do
     echo $passb24 $i
 done
