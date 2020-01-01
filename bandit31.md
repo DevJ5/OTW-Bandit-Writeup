@@ -7,4 +7,4 @@ Clone the repository and find the password for the next level.
 
 This repo has only a master branch and 1 commit. I went through all the files in the .git repository and stumbled upon packed-refs. It shows refs/tags/secret and a hash.
 
-There might a version that is tagged. `git tag` shows secret. After some googling this command apparantly shows objects under a tagname `git show --name-only`
+There might a version that is tagged. `git tag` shows secret. `git show secret` shows us the password.
