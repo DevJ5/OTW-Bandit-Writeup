@@ -11,4 +11,11 @@ It opens ~/text.txt in more. Now we can screw with more by adjusting the termina
 
 Hmm that doesn't seem to work here. We can also enter vim with `v`.
 
-In vim we can read from files using `:r /etc/bandit_pass/bandit26`
+Enter a shell from vim `:!/bin/sh` Doesn't work either...
+
+`:set shell=/bin/bash`
+`:shell`
+Finally gives us a shell.
+
+
+We can also read from files using `:r /etc/bandit_pass/bandit26` in VIM.
